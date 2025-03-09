@@ -29,7 +29,7 @@ const Button: React.FC<BottomProps> = ({ color, width, text,className}) => {
     };
 
     return (
-        <button className={`rounded-full py-2 duration-200 cursor-pointer text-lg shadow-md ${className}`} style={{ backgroundColor: getColor(), width: getWidth() }}>
+        <button className={`rounded-full p-3 duration-200 cursor-pointer text-lg shadow-md ${className}`} style={{ backgroundColor: getColor(), width: getWidth() }}>
             {text}
         </button>
     );

@@ -1,17 +1,17 @@
-import Layout from "./components/Layout";
-import Heroheader from "./components/Heroheader";
-import { Route,Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import LandingPage from "./components/LandingPage";
+import About from "./components/About";
 
 function App() {
  
  
   return (
-    <>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Heroheader/>} />
-        </Route>
-      </Routes>
+      <>
+        <Navbar />
+          <LandingPage />
+          <About/>
+        <Footer />
       </>
   )
 }
