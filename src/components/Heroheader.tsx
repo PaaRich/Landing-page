@@ -1,5 +1,9 @@
 import Button from "./Button";
 import Card from "./Card";
+import { BsCart4 } from "react-icons/bs";
+import { IoSchoolOutline } from "react-icons/io5";
+import { MdLiveTv } from "react-icons/md";
+import { GiGiftOfKnowledge } from "react-icons/gi";
 
 const Heroheader = () => {
   return (
@@ -14,12 +18,12 @@ const Heroheader = () => {
       </div>
 
       {/* cards */}
-      <div className="text-black absolute top-[85%] left-1/2 -translate-x-1/2 w-[80%]  h-[300px] bg-white shadow-xl">
+      <div className="text-black absolute top-[85%] left-1/2 -translate-x-1/2 w-[90%]  h-[300px] bg-white shadow-xl">
         <div className="flex items-center justify-between h-full w-full">
-          <Card className="card" title="E-commerce" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
-          <Card className="card" title="Training" text="Our goal is to empower you with the tools and skills needed for success in the digital world."/>
-          <Card className="card" title="Media" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
-          <Card className="card" title="Media" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
+          <Card icon={<BsCart4 size={50}/>} className="card" title="E-commerce" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
+          <Card icon={<IoSchoolOutline size={50}/>} className="card" title="Training" text="Our goal is to empower you with the tools and skills needed for success in the digital world."/>
+          <Card icon={<MdLiveTv size={50}/>} className="card" title="Media" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
+          <Card icon={<GiGiftOfKnowledge size={50}/> } className="card" title="Idea Bank" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
         </div>
       </div>
     </div>
