@@ -9,12 +9,21 @@
 *{
     
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
 }
-nav div ul li a{
+nav div ul li a:not(.services ul li a),
+.services{
     position: relative;
     font-size: large;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
-nav div ul li a:hover{
+.services{
+    text-decoration: none;
+}
+nav div ul li a:hover
+.services:hover{
     color: var(--primary-color);
 }
 nav div ul li a.active{
@@ -32,7 +41,7 @@ nav div ul li a::after{
     transition: width .3s;
 }
 nav div ul li a:hover::after,
-nav div ul li a.active::after{
+nav div ul li a:first-of-type{
     width: 100%;
 }
 .hero_header{
@@ -57,4 +66,15 @@ nav div ul li a.active::after{
     top: 10%;
     background: rgba(0, 0, 0, 0.112);
     
+}
+.circle::after{
+    content: ' ';
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    background-color: var(--primary-color);
+
 }
