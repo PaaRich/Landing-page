@@ -1,68 +1,60 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'tailwindcss';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --primary-color: green;
+    --primary-color-light:rgba(0, 128, 0, 0.536); /* Light Green */
+    --secondary-color: #ff6f61; /* Coral */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+*{
+    
+    box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+nav div ul li a{
+    position: relative;
+    font-size: large;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+nav div ul li a:hover{
+    color: var(--primary-color);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav div ul li a.active{
+    color: var(--primary-color);
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+nav div ul li a::after{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width .3s;
 }
-button:hover {
-  border-color: #646cff;
+nav div ul li a:hover::after,
+nav div ul li a.active::after{
+    width: 100%;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.hero_header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/environment_GettyImages-501231894.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.hero_header a:hover{
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.5s;
+}
+.hero_header .card::after{
+    content: '';
+    display: block;
+    width:1px;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background: rgba(0, 0, 0, 0.112);
+    
 }
