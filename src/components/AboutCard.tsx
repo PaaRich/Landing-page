@@ -2,7 +2,7 @@
 
 const AboutCard = ({ number, title, description }: { number: string; title: string; description: string }) => {
   return (
-      <div className="w-[50%] h-full p-4">
+      <div className="lg:w-[50%] h-full p-4">
           <div className="flex items-center justify-center w-full h-full">
               <div>
                    <div className='flex items-center w-full'>

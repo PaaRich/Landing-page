@@ -1,16 +1,16 @@
-import logo from '../assets/dummy-logo-5b.png';
+// import logo from '../assets/dummy-logo-5b.png';
 import { FaXTwitter, FaLinkedin, FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <section id="contact">
       <div className='flex flex-col items-center justify-center pb-4 bg-[whitesmoke]'>
-        <div>
-          <img src={logo} alt="logo" />
+        <div className="my-5">
+          <h1 className='font-bold text-3xl'>FarmGhana</h1>
         </div>
         <div>
           <button data-aos="fade-up" data-aos-duration="1100" className='rounded-full border-2 border-[var(--primary-color)] text-[var(--primary-color)] p-3 hover:text-white hover:border-[var(--primary-color)] w-[150px] duration-200 hover:bg-[var(--primary-color)] cursor-pointer'>
-            Get in touch
+            <a href="tel">Contact us</a>
           </button>
         </div>
 

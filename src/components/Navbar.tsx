@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import Logo from '../assets/dummy-logo-5b.png';
-import Button from './Button';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 
@@ -9,17 +7,18 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50 lg:py-2">
           <div className='flex max-lg:flex-col items-center justify-between max-w-[90%] mx-auto'>
-            <div className='flex items-center justify-between max-lg:w-full z-50'>
+            <div className='flex items-center justify-between max-lg:w-full z-50 max-lg:mb-2'>
                         {/* logo  */}
-                <div>
-                    <a className="block" href={"/"}><img className='w-[150px]' src={Logo} alt="logo" /></a>
+          <div>
+            <h1 className='font-bold text-3xl'>FarmGhana</h1>
+                    {/* <a className="block" href={"/"}><img className='w-[150px]' src={Logo} alt="logo" /></a> */}
                 </div>
 
                   {/* menu */}
           <div onClick={() => setIsOpen(!isOpen)} className='lg:hidden cursor-pointer'>
-            {isOpen ?<IoMdClose size={50}/>  :<HiMenuAlt3 size={50} />}
+            {isOpen ?<IoMdClose size={30}/>  :<HiMenuAlt3 size={30} />}
                      
                   </div>
             </div>
@@ -47,7 +46,8 @@ const Navbar = () => {
         </div>
 
         {/* button */}
-        <Button className='hover:opacity-80 text-white max-lg:hidden' width='medium' color='--primary-color' text='Get in touch' />
+        <button className='bg-[var(--primary-color)] rounded-full py-3 px-4 text-white max-lg:hidden'><a href="#contact">Get in touch</a></button>
+        {/* <Button className='hover:opacity-80 text-white max-lg:hidden' width='medium' color='--primary-color' text='Get in touch' /> */}
       </div>
     </nav>
   );
