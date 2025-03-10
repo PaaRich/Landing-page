@@ -29,7 +29,8 @@ nav div ul li a:hover
 nav div ul li a.active{
     color: var(--primary-color);
 }
-nav div ul li a::after:not(.services ul li a){
+@media (min-width:557px)   {
+    nav div ul li a::after{
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
@@ -40,13 +41,15 @@ nav div ul li a::after:not(.services ul li a){
     background: var(--primary-color);
     transition: width .3s;
 }
+nav div ul li a:hover::after{
+    width: 100%;
+}
+}
+
 .services ul li a:hover{
     color: var(--primary-color);
 }
-nav div ul li a:hover::after,
-nav div ul li a:first-of-type{
-    width: 100%;
-}
+
 .hero_header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/environment_GettyImages-501231894.jpg');
     background-repeat: no-repeat;
@@ -81,8 +84,24 @@ nav div ul li a:first-of-type{
     background-color: var(--primary-color);
 
 }
+.header{
+    position: relative;
+    color: var(--primary-color);
+}
+.header::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width:80px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
 
-@media  (max-width: 768px) {
+@media  (max-width: 993px) {
     .isOpen ul>li{
     height: 100%;
 }
