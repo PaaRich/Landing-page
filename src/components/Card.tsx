@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Card = ({ className, title, text,icon }: { className?: string; title: string; text: string, icon:React.ReactNode}) => {
   return (
-      <div className={` relative w-1/4 h-full ${className}`}>
-      <Link className="group hover:text-white text-[var(--primary-color)] p-4 h-full flex flex-col justify-center items-center text-center" to="#">
+      <div className={`max-lg:h-[300px] relative duration-200 w-full lg:w-1/4 h-full text-[var(--primary-color)] hover:text-white hover:bg-[var(--primary-color)] ${className}`}>
+      <Link className="group p-4 h-full flex flex-col justify-center items-center text-center" to="#">
                 <div>
                   {icon}
                 </div>

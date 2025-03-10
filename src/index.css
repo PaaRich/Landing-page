@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
-nav div ul li a:not(.services ul li a),
+nav div ul li a,
 .services{
     position: relative;
     font-size: large;
@@ -29,7 +29,7 @@ nav div ul li a:hover
 nav div ul li a.active{
     color: var(--primary-color);
 }
-nav div ul li a::after{
+nav div ul li a::after:not(.services ul li a){
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
@@ -39,6 +39,9 @@ nav div ul li a::after{
     height: 2px;
     background: var(--primary-color);
     transition: width .3s;
+}
+.services ul li a:hover{
+    color: var(--primary-color);
 }
 nav div ul li a:hover::after,
 nav div ul li a:first-of-type{
@@ -78,3 +81,21 @@ nav div ul li a:first-of-type{
     background-color: var(--primary-color);
 
 }
+
+@media  (max-width: 768px) {
+    .isOpen ul>li{
+    height: 100%;
+}
+.isClose ul>li{
+    height: 0;
+    visibility: hidden;
+}
+}
+
+
+/* @media screen and (max-width: 768px){
+    .nav div ul>li a{
+        padding: 0.5rem 0;
+    }
+    
+} */
