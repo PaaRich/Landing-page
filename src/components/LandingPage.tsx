@@ -43,13 +43,13 @@ const LandingPage = () => {
       </div>
 
       {/* cards */}
-      <section id="services" data-aos="fade-up" className="hidden lg:block text-black absolute top-[85%] left-1/2 -translate-x-1/2 w-[90%]  h-[300px] bg-white shadow-xl">
+      <section id="services" data-aos="fade-up" className="hidden lg:block text-black absolute top-[85%] left-1/2 -translate-x-1/2 w-[90%]  h-[350px] bg-white shadow-xl">
         <div className="flex items-center justify-between h-full w-full">
           <Card path="https://farmghana-ecommerce.onrender.com/" icon={<BsCart4 size={50}/>} className="card" 
-          title="E-commerce" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
-          <Card path="#" icon={<IoSchoolOutline size={50}/>} className="card" title="Training" text="Our goal is to empower you with the tools and skills needed for success in the digital world."/>
-          <Card path="#" icon={<MdLiveTv size={50}/>} className="card" title="Media" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
-          <Card path="#" icon={<GiGiftOfKnowledge size={50}/> } className="card" title="Idea Bank" text="We provide top-notch e-commerce solutions, expert training, and media services to help businesses and individuals grow."/>
+          title="E-commerce" text="We provide a seamless online shopping experience,affordable prices. Enjoy fast delivery, easy ordering, and excellent customer support. Shop with confidence today!"/>
+          <Card path="#" icon={<IoSchoolOutline size={50}/>} className="card" title="Training" text="Gain hands-on skills with our expert-led vocational training programs. From technical trades to business skills, we equip you with practical knowledge for a successful career. "/>
+          <Card path="#" icon={<MdLiveTv size={50}/>} className="card" title="Media" text="We offer high-quality live streaming and broadcasting services for events, conferences, and special programs. Engage your viewers like never before!"/>
+          <Card path="#" icon={<GiGiftOfKnowledge size={50}/> } className="card" title="Idea Bank" text="Join our engaging podcast where ideas, insights, and experiences are shared. We discuss business, technology, personal growth, and more—bringing you fresh perspectives from experts and thought leaders."/>
         </div>
       </section>
     </section>
