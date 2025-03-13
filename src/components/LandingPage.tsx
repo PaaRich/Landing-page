@@ -43,10 +43,9 @@ const LandingPage = () => {
       </div>
 
       {/* cards */}
-      <section id="services" data-aos="fade-up" className="hidden lg:block text-black absolute top-[85%] left-1/2 -translate-x-1/2 w-[90%]  h-fit bg-white shadow-xl z-10">
-        <div className="flex items-center justify-between h-full w-full">
-          <Card path="https://farmghana-ecommerce.onrender.com/" icon={<BsCart4 size={50}/>} className="card" 
-          title="E-commerce" text="We provide a seamless online shopping experience,affordable prices. Enjoy fast delivery, easy ordering, and excellent customer support. Shop with confidence today!"/>
+      <section id="services" data-aos="fade-up" className="hidden lg:block text-black absolute top-[75%] left-1/2 -translate-x-1/2 w-[90%]  h-fit bg-white shadow-xl z-10">
+        <div className="flex items-center justify-between h-[430px] w-full">
+          <Card path="https://farmghana-ecommerce.onrender.com/" icon={<BsCart4 size={50}/>} className="card" title="E-commerce" text="We provide a seamless online shopping experience,affordable prices. Enjoy fast delivery, easy ordering, and excellent customer support. Shop with confidence today!"/>
           <Card path="#" icon={<IoSchoolOutline size={50}/>} className="card" title="Training" text="Gain hands-on skills with our expert-led vocational training programs. From technical trades to business skills, we equip you with practical knowledge for a successful career. "/>
           <Card path="#" icon={<MdLiveTv size={50}/>} className="card" title="Media" text="We offer high-quality live streaming and broadcasting services for events, conferences, and special programs. Engage your viewers like never before!"/>
           <Card path="#" icon={<GiGiftOfKnowledge size={50}/> } className="card" title="Idea Bank" text="Join our engaging podcast where ideas, insights, and experiences are shared. We discuss business, technology, personal growth, and more—bringing you fresh."/>
