@@ -7,7 +7,7 @@ const Services = () => {
   return (
       <section id="services" className="lg:hidden">
           <h1 className="header text-center font-semibold my-10 text-3xl md:text-5xl tracking-wide">Services</h1>
-          <div>
+          <div className="flex flex-col items-center justify-center gap-8">
         <Card path="https://farmghana-ecommerce.onrender.com/"
           icon={<BsCart4 size={50} />}
           className="card" title="E-commerce"

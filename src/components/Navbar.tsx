@@ -7,9 +7,9 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50 lg:py-2">
+    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50 lg:py-8">
           <div className='flex max-lg:flex-col items-center justify-between max-w-[90%] mx-auto'>
-            <div className='flex items-center justify-between max-lg:w-full z-50 max-lg:mb-2'>
+            <div className='flex items-center justify-between max-lg:w-full z-50 max-md:pt-5'>
                         {/* logo  */}
           <div>
             <h1 className='font-bold text-3xl'>FarmGhana</h1>
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
 
         {/* button */}
-        <button className='bg-[var(--primary-color)] rounded-full py-3 px-4 text-white max-lg:hidden'><a href="#contact">Get in touch</a></button>
+        <button className='bg-[var(--primary-color)] rounded-full py-3 px-8 text-white max-lg:hidden'><a href="#contact">Get in touch</a></button>
         {/* <Button className='hover:opacity-80 text-white max-lg:hidden' width='medium' color='--primary-color' text='Get in touch' /> */}
       </div>
     </nav>

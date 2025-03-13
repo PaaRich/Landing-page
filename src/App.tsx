@@ -5,17 +5,15 @@ import About from "./components/About";
 import Services from "./components/Services";
 
 function App() {
- 
- 
   return (
-      <>
-        <Navbar />
+    <>
+      <Navbar />
       <LandingPage />
+      <Services />
       <About />
-      <Services/>
-        <Footer />
-      </>
-  )
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
